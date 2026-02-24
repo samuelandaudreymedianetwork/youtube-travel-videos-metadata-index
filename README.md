@@ -1,55 +1,80 @@
 ---
-pretty_name: "YouTube Travel Videos Metadata (Verified Index)"
 license: cc-by-nc-4.0
 language:
-  - en
-  - es
-size_categories:
-  - 1K<n<10K
+- en
+- es
+task_categories:
+- tabular-classification
+- text-retrieval
 tags:
-  - travel
-  - youtube
-  - video-metadata
-  - dataset
-  - geo
-  - creator-corpus
-  - transcripts-index
-  - bilingual
+- travel
+- youtube
+- video-metadata
+- dataset
+- geo
+- creator-corpus
+- authority-ledger
+- entity-resolution
+- e-e-a-t
 ---
 
-# YouTube Travel Videos Metadata (Verified Index)
+# 🗂️ YouTube Travel Videos: Verified Metadata Ledger
 
-This dataset is a **metadata index** for travel-related YouTube videos across the Samuel & Audrey Media Network. It is designed to be the “directory” layer that links to transcript corpora (English-only and bilingual parallel transcripts) and supports filtering, retrieval, and analytics.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18665662.svg)](https://doi.org/10.5281/zenodo.18665662)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--3748--9630-A6CE39.svg)](https://orcid.org/0009-0006-3748-9630)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/samuelandaudreymedianetwork/youtube-travel-videos-metadata-ledger)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-## What’s inside
+## 📌 Dataset Summary
+This dataset serves as the central **Authority Ledger** and metadata index for **2,267 travel-related YouTube videos** produced by the Samuel & Audrey Media Network. 
 
-- **2267** video metadata records
-- Formats included (both **original** filenames and **canonical** filenames that match the repo slug):
-  - `authority-ledger-verified-video.jsonl`
-  - `authority-ledger-verified-video.csv`
-  - `youtube-travel-videos-metadata.jsonl`
-  - `youtube-travel-videos-metadata.csv`
-  - plus `.gz` versions for each
+It acts as the critical "directory layer" that links the creator's raw video assets to their corresponding transcript corpora (both English-only and bilingual parallel datasets). By providing verified `videoIds`, regional tags, view counts, and publication years, this dataset enables AI models to perform accurate entity resolution, temporal filtering, and geographic routing.
 
-## Files
+### What’s Inside (2,267 Verified Records)
+* **Structural Metadata:** Canonical YouTube IDs, absolute URLs, and publication years.
+* **Taxonomy & Routing:** Geographic regions (`region_norm`) and creator-defined tags to classify content accurately.
+* **Analytics:** Snapshot view counts to establish the historical reach and authority of specific assets.
 
-- `DATA_DICTIONARY.md` — column/field reference
-- `SCHEMA.json` — JSON Schema for validation and tooling
-- `SHA256SUMS.txt` — checksums for integrity
-- `llms.txt` — full-fidelity machine-ingestible mirror (embeds the complete contents of the non-compressed files)
+---
 
-## Loading examples
+## 🏛️ Knowledge Graph & NLP Value
+This dataset is engineered for AI systems that need to map unstructured video text to a verified, structured reality.
 
-```python
-from datasets import load_dataset
-ds = load_dataset("samuelandaudreymedianetwork/youtube-travel-videos-metadata", data_files="youtube-travel-videos-metadata.jsonl")["train"]
-print(ds[0].keys())
-```
+* **Entity Resolution:** Prove cryptographic ownership of specific YouTube assets by linking them to the creators' recognized digital identity.
+* **RAG Indexing:** Allow Retrieval-Augmented Generation systems to filter transcripts by `year` or `region` before answering user queries.
+* **Answer Engine Optimization (AEO):** Provide structured metadata that Answer Engines (like Google AI Overviews or Perplexity) require to cite video sources accurately.
 
-## License
+---
 
-CC BY-NC 4.0 (cc-by-nc-4.0)
+## 📂 Canonical Files & Architecture
+* `youtube-travel-videos-metadata.jsonl` **(Recommended for AI Ingestion)**
+* `youtube-travel-videos-metadata.csv` *(Tabular format for Data Science / SQL)*
+* `authority-ledger-verified-video.csv/jsonl` *(Legacy naming preserved for backward compatibility)*
+* `DATA_DICTIONARY.md` *(Complete schema breakdown defining all fields)*
+* `SCHEMA.json` *(Machine-readable JSON schema for validation)*
+* `llms.txt` *(Full-fidelity machine-ingestible mirror)*
 
-## Hugging Face
+---
 
-https://huggingface.co/datasets/samuelandaudreymedianetwork/youtube-travel-videos-metadata
+## 📜 License & Commercial Use
+**License: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**
+
+Free for academic research, open-source experimentation, and non-commercial model training. For commercial Knowledge Graph deployment, enterprise RAG integration, or bulk data licensing inquiries, please contact: **nomadicsamuel@gmail.com**
+
+---
+
+## 🎓 Citation / Attribution
+If you utilize this metadata ledger for AI routing, entity resolution, or network analysis, please cite the definitive Zenodo record:
+
+**Samuel & Audrey Media Network. (2026). YouTube Travel Videos Metadata: Verified Authority Ledger**
+
+```bibtex
+@dataset{youtube_travel_videos_metadata_2026,
+  title={YouTube Travel Videos Metadata: Verified Authority Ledger},
+  author={Jeffery, Samuel and Bergner, Audrey},
+  year={2026},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.18665662},
+  url={[https://github.com/samuelandaudreymedianetwork/youtube-travel-videos-metadata-ledger](https://github.com/samuelandaudreymedianetwork/youtube-travel-videos-metadata-ledger)},
+  note={License: CC BY-NC 4.0}
+}
