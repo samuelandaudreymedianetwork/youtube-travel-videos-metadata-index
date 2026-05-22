@@ -1,0 +1,102 @@
+{
+  "dataset": "youtube-travel-videos-metadata-index",
+  "title": "YouTube Travel Videos Metadata Index",
+  "generated_utc": "2026-05-21T19:13:26.080221+00:00",
+  "records_total": 2267,
+  "record_counts_by_type": {
+    "youtube_video_metadata": 2267
+  },
+  "canonical_dataset_url": "https://huggingface.co/datasets/samuelandaudreymedianetwork/youtube-travel-videos-metadata-index",
+  "doi": "10.5281/zenodo.18665662",
+  "license": "CC-BY-NC-4.0",
+  "snapshot": {
+    "valid_video_ids": 2267,
+    "duplicate_video_id_flags": 112,
+    "records_with_missing_view_counts": 4,
+    "top_regions": {
+      "argentina": 437,
+      "canada": 306,
+      "south korea": 164,
+      "peru": 117,
+      "japan": 98,
+      "global": 72,
+      "germany": 59,
+      "india": 56,
+      "malaysia": 54,
+      "japon": 49,
+      "italy": 46,
+      "uk": 45,
+      "thailand": 45,
+      "cocina": 42,
+      "vietnam": 39,
+      "usa": 38,
+      "cambodia": 34,
+      "spain": 30,
+      "south africa": 27,
+      "finland": 26
+    }
+  },
+  "files": {
+    ".gitattributes": {
+      "bytes": 127,
+      "sha256": "f884ab5acc3c44d244496ca3be708ee0bb81d627d6b78ba33331abd90b1d7f68"
+    },
+    "CITATION.cff": {
+      "bytes": 892,
+      "sha256": "dd0aa6734c890ff6180c9413e2c16c1b8eeadb5f368a7d94070df1fc219f892b"
+    },
+    "DATA_DICTIONARY.md": {
+      "bytes": 2300,
+      "sha256": "2dcca91b9266ddc959bfed4ca4a3fd987f5d2bd174f71e410d2720152d8a1d59"
+    },
+    "LICENSE.txt": {
+      "bytes": 565,
+      "sha256": "2cbdc48c2204869175a999956b8be6d3fbf1b0f00397da43c85ee072e7a8f841"
+    },
+    "MANIFEST.json": {
+      "bytes": 3428,
+      "sha256": "a951fccb087c3586ba341d28eb9ff2a31cb95d667649f24f9a1def859a237439"
+    },
+    "README.md": {
+      "bytes": 4482,
+      "sha256": "6178f6be9651df8fbf338d5112b148dbca42706e29ff90e5a415b90a5be259b7"
+    },
+    "SCHEMA.json": {
+      "bytes": 2897,
+      "sha256": "e8cb4777739ca61aea6a1804563f9f58a1b5aaeeede8a99f301f8013d4320abf"
+    },
+    "llms-youtube-travel-videos-metadata-index.txt": {
+      "bytes": 2497925,
+      "sha256": "48a8cb085b5816f695265bb2c8a78ce74d0f3e0057354d7990b6c4e587c4b867"
+    },
+    "llms-youtube-travel-videos-metadata-index.txt.gz": {
+      "bytes": 380681,
+      "sha256": "34d3b263302cf4f45e430070da34800dd7a2b10b3c34e9f58cd5268fc4888bef"
+    },
+    "llms.txt": {
+      "bytes": 592,
+      "sha256": "c8e084f30470a4c8dca39148ee8efd43a5b054817f6392bea2b828bae646072e"
+    },
+    "llms.txt.gz": {
+      "bytes": 381,
+      "sha256": "32fec12335c9299c8b1a08ab136bb325b539181f10f22e83dd323f7a6fae3074"
+    },
+    "youtube-travel-videos-metadata.csv": {
+      "bytes": 1645489,
+      "sha256": "f25721145c5f76c6d296d4da4976feed74ca048d8b881d656c56af4c34b13741"
+    },
+    "youtube-travel-videos-metadata.csv.gz": {
+      "bytes": 308087,
+      "sha256": "83524bd3262fb73267a4c6996a85fad6491de93bf7c3def5fd96d14437ff8100"
+    },
+    "youtube-travel-videos-metadata.jsonl": {
+      "bytes": 2497607,
+      "sha256": "84be82f9521985663f98ffca5ccd2b364c762848c23fa03bcf0c7917439140d1"
+    },
+    "youtube-travel-videos-metadata.jsonl.gz": {
+      "bytes": 380463,
+      "sha256": "663a7a9421c8d859f94c0e5a3aca5de38f875b2527d48e4e0fb17b4bede494fb"
+    }
+  },
+  "cleanup_note": "Earlier duplicate legacy-named data files were removed. Canonical data files use the youtube-travel-videos-metadata naming pattern."
+}

@@ -1,122 +1,191 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "YouTube Travel Videos Metadata (Verified Index)",
+  "title": "YouTube Travel Videos Metadata Index",
+  "description": "Structured metadata records for travel-related YouTube videos published by the Samuel & Audrey Media Network.",
   "type": "object",
   "additionalProperties": true,
   "properties": {
-    "is_duplicate_videoId": {
+    "record_id": {
+      "type": "string"
+    },
+    "record_type": {
+      "type": "string"
+    },
+    "row_id": {
       "type": [
-        "boolean"
+        "integer",
+        "null"
+      ]
+    },
+    "year": {
+      "type": [
+        "integer",
+        "string",
+        "null"
       ]
     },
     "region": {
       "type": [
-        "string"
+        "string",
+        "null"
       ]
     },
     "region_norm": {
       "type": [
-        "string"
-      ]
-    },
-    "row_id": {
-      "type": [
-        "integer"
-      ]
-    },
-    "tag1": {
-      "type": [
-        "string"
-      ]
-    },
-    "tag2": {
-      "type": [
-        "string"
-      ]
-    },
-    "tag3": {
-      "type": [
-        "string"
-      ]
-    },
-    "tag4": {
-      "type": [
-        "string"
-      ]
-    },
-    "tag5": {
-      "type": [
-        "string"
-      ]
-    },
-    "tags": {
-      "type": [
-        "string"
-      ]
-    },
-    "tags_list": {
-      "type": [
-        "array"
-      ]
-    },
-    "tags_raw": {
-      "type": [
-        "string"
+        "string",
+        "null"
       ]
     },
     "title": {
       "type": [
-        "string"
+        "string",
+        "null"
       ]
     },
     "url": {
       "type": [
-        "string"
+        "string",
+        "null"
       ]
     },
     "videoId": {
       "type": [
-        "string"
+        "string",
+        "null"
+      ]
+    },
+    "video_id": {
+      "type": [
+        "string",
+        "null"
       ]
     },
     "videoId_is_valid": {
       "type": [
-        "boolean"
+        "boolean",
+        "null"
       ]
     },
     "videoId_occurrences": {
       "type": [
-        "integer"
+        "integer",
+        "null"
+      ]
+    },
+    "is_duplicate_videoId": {
+      "type": [
+        "boolean",
+        "null"
       ]
     },
     "views": {
       "type": [
         "number",
         "integer",
+        "string",
         "null"
       ]
     },
-    "views_is_missing": {
+    "view_count": {
       "type": [
-        "boolean"
+        "number",
+        "integer",
+        "string",
+        "null"
       ]
     },
     "views_raw": {
       "type": [
         "number",
+        "integer",
         "string",
+        "null"
+      ]
+    },
+    "views_is_missing": {
+      "type": [
+        "boolean",
         "null"
       ]
     },
     "views_snapshot_date": {
       "type": [
-        "string"
+        "string",
+        "null"
       ]
     },
-    "year": {
+    "metadata_snapshot_date": {
       "type": [
-        "integer"
+        "string",
+        "null"
+      ]
+    },
+    "tags_list": {
+      "type": [
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tag1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tag2": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tag3": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tag4": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tag5": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_platform": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
       ]
     }
-  }
+  },
+  "required": [
+    "record_id",
+    "record_type",
+    "title",
+    "url"
+  ]
 }

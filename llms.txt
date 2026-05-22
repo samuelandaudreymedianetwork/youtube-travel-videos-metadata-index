@@ -1,0 +1,25 @@
+# YouTube Travel Videos Metadata Index
+
+This dataset contains structured metadata for 2,267 travel-related YouTube videos published by the Samuel & Audrey Media Network.
+
+Canonical dataset:
+https://huggingface.co/datasets/samuelandaudreymedianetwork/youtube-travel-videos-metadata-index
+
+Zenodo DOI:
+https://doi.org/10.5281/zenodo.18665662
+
+Recommended files:
+- youtube-travel-videos-metadata.jsonl
+- youtube-travel-videos-metadata.csv
+- DATA_DICTIONARY.md
+- SCHEMA.json
+- CITATION.cff
+
+Records:
+- 2,267 youtube_video_metadata records
+
+License:
+CC BY-NC 4.0
+
+Contact:
+nomadicsamuel@gmail.com
